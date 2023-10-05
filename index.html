@@ -599,8 +599,8 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro</p>
                 </div>
             </div>
-            <form method="get">
-                <input type="email" placeholder="Enter Your Email">
+            <form name="email-for-subscribe" method="get">
+                <input type="email" name="your-subscription-email" id="sub" placeholder="Enter Your Email">
                 <input type="submit" value="Subscribe">
             </form>
         </div>
@@ -716,11 +716,11 @@
         <div class="request">
             <div class="box">
                 <h3>Request A Discount</h3>
-                <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <input type="text" placeholder="Your Phone Number">
-                    <textarea placeholder="Tell Us About Your Needs"></textarea>
+                <form name="the-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name [Required]">
+                    <input type="email" id="mail" name="mail" placeholder="Your Email [Required]">
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number [Required]">
+                    <textarea name="need" placeholder="Tell Us About Your Needs [Optional]"></textarea>
                     <input type="submit" value="Send">
                 </form>
             </div>
@@ -787,5 +787,7 @@
         </div>
     </footer>
     <!-- End Footer -->
+    <script src="events-validation-idea.js"></script>
+    <script src="stats-validation-idea.js"></script>
 </body>
 </html>
